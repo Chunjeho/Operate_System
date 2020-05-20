@@ -4,11 +4,11 @@ Hello, 매일프로그래밍 code problem on this week.
   
 ## Problem  
 정렬된 정수 배열이 주어졌을 때, 주어진 수가 존재하는 배열의 첫 번째 위치와 마지막 위치를 찾으시오.  
-When there is given sorted integer array, find the first and last index where a given number is exsisted.
+If there is a given sorted integer array, find the first and last index where a given number is exsisted.
    
   
 배열에 찾는 수가 없다면 없다고 출력하세요.  
-If the given number doesn't exsit, print "None", "There is no given number", etc.  
+If the given number doesn't exsit, print "None".  
   
   
 ### Input:  
