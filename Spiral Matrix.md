@@ -1,4 +1,4 @@
-# Find First And Last Index
+# Sprial Matrix
 안녕하세요, 매일프로그래밍 이번주 문제입니다.  
 Hello, new code problem on this week.  
   
