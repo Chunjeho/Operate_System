@@ -1,9 +1,10 @@
-_path = [[1,38],[1,2],[1,2,3],[1,2,3,4,14],[1,2,3,4,5],[1,2,3,4,5,6]]
 _bowl = [] #kind of buffer memory
 _final = [] #storage for some paths or final path(shortest)
 
 _ladder = {1:38, 4:14, 9:31, 21:42, 28:84, 51:67, 72:91, 80:99} # {from:to}
 _snake = {17:7, 54:34, 62:19, 64:60, 87:36, 93:73, 95:75, 98:79} # {from:to}
+_path = [[1,38],[1,2],[1,2,3],[1,2,3,4,14],[1,2,3,4,5],[1,2,3,4,5,6]]
+
 finish = 0 #Count, if you excess 100 or use for something to count
 
 #make some paths
