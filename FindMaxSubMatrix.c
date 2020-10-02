@@ -18,13 +18,13 @@ int main(){
 	int* startEndTable = (int*)malloc(sizeof(int)*size*(size-1)/2*2);
 	int* sumTable = (int*)malloc(sizeof(int)*size*(size-1)/2*size*(size-1)/2*3);
 	int table[5][5] = {{-5, -6, 3, 1, 0},
-						{9, 7, 8, 3, 7},
-						{-6, -2, -1, 2, -4},
-						{-7, 5, 5, 2, -6},
-						{3, 2, 9, -5, 1}};
+			   {9, 7, 8, 3, 7},
+			   {-6, -2, -1, 2, -4},
+			   {-7, 5, 5, 2, -6},
+			   {3, 2, 9, -5, 1}};
 	
-	for(i=0;i<5;i++){
-		for(j=i+1;j<5;j++){
+	for(i=0;i<size;i++){
+		for(j=i+1;j<size;j++){
 //			printf("k: %d, l: %d\n",k,l);
 			startEndTable[2*k+l] = i;
 			l = 1;
