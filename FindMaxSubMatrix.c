@@ -15,16 +15,16 @@ int main(){
 	int maxIndex = 0;
 	int sum = 0;
 	int size = 5;
-	int* startEndTable = (int*)malloc(sizeof(int)*size*(size-1)/2*2);
-	int* sumTable = (int*)malloc(sizeof(int)*size*(size-1)/2*size*(size-1)/2*3);
+	int* startEndTable = (int*)malloc(sizeof(int)*(size*(size-1)/2+size)*2);
+	int* sumTable = (int*)malloc(sizeof(int)*(size*(size-1)/2+size)*(size*(size-1)/2+size)*3);
 	int table[5][5] = {{-5, -6, 3, 1, 0},
-			   {9, 7, 8, 3, 7},
-			   {-6, -2, -1, 2, -4},
-			   {-7, 5, 5, 2, -6},
-			   {3, 2, 9, -5, 1}};
+						{9, 7, 8, 3, 7},
+						{-6, -2, -1, 2, -4},
+						{-7, 5, 5, 2, -6},
+						{3, 2, 9, -5, 1}};
 	
-	for(i=0;i<size;i++){
-		for(j=i+1;j<size;j++){
+	for(i=0;i<5;i++){
+		for(j=i;j<5;j++){
 //			printf("k: %d, l: %d\n",k,l);
 			startEndTable[2*k+l] = i;
 			l = 1;
@@ -34,8 +34,8 @@ int main(){
 		}
 	}
 	
-	for(k=0;k<size*(size-1)/2;k++){
-		for(m=0;m<size*(size-1)/2;m++){
+	for(k=0;k<size*(size-1)/2+size;k++){
+		for(m=0;m<size*(size-1)/2+size;m++){
 			sum = 0;
 			l = 0;
 			n = 0;
@@ -57,7 +57,7 @@ int main(){
 	}
 	
 	max = sumTable[0];
-	for(o=0;o<size*(size-1)/2*size*(size-1)/2;o++){
+	for(o=0;o<(size*(size-1)/2+size)*(size*(size-1)/2+size);o++){
 		
 		if(sumTable[3*o] >= max){
 			max = sumTable[3*o];
