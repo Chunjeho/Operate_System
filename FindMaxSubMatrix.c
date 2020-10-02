@@ -18,10 +18,10 @@ int main(){
 	int* startEndTable = (int*)malloc(sizeof(int)*(size*(size-1)/2+size)*2);
 	int* sumTable = (int*)malloc(sizeof(int)*(size*(size-1)/2+size)*(size*(size-1)/2+size)*3);
 	int table[5][5] = {{-5, -6, 3, 1, 0},
-						{9, 7, 8, 3, 7},
-						{-6, -2, -1, 2, -4},
-						{-7, 5, 5, 2, -6},
-						{3, 2, 9, -5, 1}};
+			   {9, 7, 8, 3, 7},
+			   {-6, -2, -1, 2, -4},
+			   {-7, 5, 5, 2, -6},
+			   {3, 2, 9, -5, 1}};
 	
 	for(i=0;i<5;i++){
 		for(j=i;j<5;j++){
@@ -69,7 +69,5 @@ int main(){
 //	printf("Total: %d\n", totalNum);
 	printf("Max: (%d,%d)->(%d,%d); %d", startEndTable[sumTable[maxIndex*3+1]],startEndTable[sumTable[maxIndex*3+2]],startEndTable[sumTable[maxIndex*3+1]+1],startEndTable[sumTable[maxIndex*3+2]+1],max);
 	
-
-		
 	return 0;
 }
